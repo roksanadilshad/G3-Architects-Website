@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 
@@ -9,31 +8,144 @@
   font-style: normal;
 }
 
+/* shared styles */
+.display-flex{
+     display: flex;
+    
+}
+/* dark-02 */
+.text-gray{
+    color: #424242;
+}
+.orange{
+    color: #FF900E;
+}
+/* dark-03 */
+.text-light-gray{
+    color:#727272;
+}
+
+.bg-light{
+    background-color:  rgba(255, 144, 14, 0.1);
+}
+
+.btn{
+   background-color:#FF900E ;
+   color: #ffffff;
+   font-weight:600;
+   font-size: 1.2rem;
+   border-radius: 8px;
+   padding: 20px 25px;
+   border: 1px solid #FF900E;
+}
+.section-title{
+    font-size: 3rem;
+    font-weight: bold;
+
+}
+main > section{
+    margin-top: 130px;
+}
+/* header styles */
+/* navbar related style */
+
+.navbar{
+    justify-content: space-between;
+   align-items: center;
+}
+.brand{
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+.navitem{
+    margin-right: 30px;
+   list-style: none;
+}
+
+.nav-link{
+    text-decoration: none;
+    font-weight: 500 ;
+}
+
+.navbar, .banner{
+    max-width:1440px;
+    margin: 0 auto;
+}
+ /* banner */
+
+.banner-content{
+    max-width: 862px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.banner-title{
+    font-weight: bold;
+    font-size: 4rem;
+
+}
+.banner-img{
+    width: 100%;
+}
 
 
 
+ main{
+    max-width: 1440px;
+    margin: 0 auto;
+ }
+ /* team and feature related style */
+.team {
+    align-items: center;
+}
+
+.team-img-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+.our-features{
+    margin-left: 100px;
+    max-width: 530px;
+}
 
 
+.our-features p{
+    font-size: 1rem;
+    line-height: 26px;
+}
 
+/* responsive media query */
+/* for small device */
+ @media screen and (max-width:576px){
+    .navbar,
+     .nav-links,
+      .team{
+        flex-direction: column;
+      }
 
+     .team-img-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    /* css holo cascading-stylesheet tai upore @media deyay oita kaj korchilo na br br team-img-container er grid-template-columns kei dhoetesilo */
+     .our-features{
+        margin-left: 18px ;
+     }
+ }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ 
+/* responsive media query */
+/* for meium device */
+ @media screen and (min-width:576px) and (max-width:9926px){
+     .team{
+        flex-direction: column;
+     }
+     .our-features{
+        margin-left: 50px auto;
+     }
+ }
 
 
 
