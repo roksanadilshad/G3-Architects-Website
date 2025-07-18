@@ -115,7 +115,68 @@ main > section{
 .our-features p{
     font-size: 1rem;
     line-height: 26px;
+    width: 542px;
 }
+
+/* some facts */
+.fact-card-container{
+    display:grid ;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 50px;
+}
+.facts-text{
+    text-align: left;
+}
+.fact-card{
+    border: 1px solid #FF900E;
+    padding:36px ;
+    border-radius: 8px;
+    width: 200px;
+    height: 160px;
+    text-align: center;
+}
+.fact-card h4{
+    font-size: 3rem;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 5px;
+
+}
+.fact-card p{
+    font-size: 1.3rem;
+    font-weight: 600;
+   
+
+}
+/* sponsers */
+
+.sponspors-logo{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin-top: 50px;
+}
+.sponspors-logo img{
+    width: 150px;
+    height: 40px;
+}
+.sponsers-text{
+    text-align: center;
+}
+.sponsers-text p{
+    margin-top: 24px;
+}
+
+footer{
+    padding:30px 350px;
+    background-color:#FFF4E7;
+    text-align: center;
+    margin: 80px 240px;
+    border-radius: 8px;
+    border: 1px solid #FFF4E7;
+    
+}
+
+
 
 /* responsive media query */
 /* for small device */
@@ -126,19 +187,42 @@ main > section{
         flex-direction: column;
       }
 
-     .team-img-container{
+     .team-img-container,
+     .fact-card-container{
         grid-template-columns: repeat(1, 1fr);
     }
     /* css holo cascading-stylesheet tai upore @media deyay oita kaj korchilo na br br team-img-container er grid-template-columns kei dhoetesilo */
-     .our-features{
+    .fact-card-container{
+        margin-left: 90px;
+        gap: 15px;
+    }
+     .our-features,
+     .facts-text{
         margin-left: 18px ;
      }
+     .sponspors-logo img{
+    width: 50px;
+    height: 15px;
+}
+footer{
+    padding:1px 1px;
+    background-color:#FFF4E7;
+    text-align: center;
+    margin: 10px 20px;
+    border-radius: 8px;
+    border: 1px solid #FFF4E7;
+    
+}
+footer p{
+    font-size: .7rem;
+
+}
  }
 
  
 /* responsive media query */
 /* for meium device */
- @media screen and (min-width:576px) and (max-width:9926px){
+ @media screen and (min-width:576px) and (max-width:992px){
      .team{
         flex-direction: column;
      }
