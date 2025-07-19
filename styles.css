@@ -108,7 +108,7 @@ main > section{
 }
 .our-features{
     margin-left: 100px;
-    max-width: 530px;
+   
 }
 
 
@@ -158,13 +158,15 @@ main > section{
 .sponspors-logo img{
     width: 150px;
     height: 40px;
+    margin: 0 auto;
+    filter: grayscale(100%);
 }
 .sponsers-text{
-    text-align: center;
+    grid-row: span 1;
 }
-.sponsers-text p{
+/* .sponsers-text{
     margin-top: 24px;
-}
+} */
 
 footer{
     padding:30px 350px;
@@ -193,24 +195,29 @@ footer{
     }
     /* css holo cascading-stylesheet tai upore @media deyay oita kaj korchilo na br br team-img-container er grid-template-columns kei dhoetesilo */
     .fact-card-container{
-        margin-left: 90px;
         gap: 15px;
+        place-items: center;
+    }
+    .our-features{
+        margin-left: 0;
     }
      .our-features,
      .facts-text{
-        margin-left: 18px ;
+        text-align: center;
      }
-     .sponspors-logo img{
-    width: 50px;
-    height: 15px;
+     .sponspors-logo{
+    align-items: center;
+   
 }
+ .sponspors-logo img{
+    width: 40px;
+    height: 20px;
+
+ }
 footer{
     padding:1px 1px;
-    background-color:#FFF4E7;
-    text-align: center;
     margin: 10px 20px;
-    border-radius: 8px;
-    border: 1px solid #FFF4E7;
+  
     
 }
 footer p{
@@ -227,8 +234,27 @@ footer p{
         flex-direction: column;
      }
      .our-features{
-        margin-left: 50px auto;
+        margin-left: 0;
      }
+
+     .our-features,
+     .facts-text{
+        text-align: center;
+     }
+     .fact-card-container,
+     .sponspors-logo{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px;
+        justify-items: center;
+     }
+     footer p{
+    font-size: .70rem;
+}
+footer{
+    padding:1px 1px;
+    margin: 10px 20px;
+}
+
  }
 
 
